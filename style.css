@@ -1,0 +1,108 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin:0px;
+}
+
+h1.header {
+  font-family: 'Ubuntu', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 0%;
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+p.font {
+  font-family: 'Ubuntu', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/*Bakgrunnsbilder */
+.bg, .bg2, .bg3 {
+  background-image: url("Bilder/Alfresco.png");
+
+  height: 100%;
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2 {
+    background-image: url("Bilder/SwimmingCult.jpg");
+}
+
+.bg3 {
+  background-image: url("Bilder/Logo.jpg");
+  background-size: 40%;
+  height: 100%;
+}
+
+img.overskrift {
+  min-width: 150px;
+  max-width: 20%;
+}
+
+img.bandLogo{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50%;
+}
+
+/*---- MENU ----*/
+ul{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+ul li{
+  display: inline-block;
+  text-align: center;
+}
+
+ul a{
+  font-family: 'Ubuntu', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  float: none;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul a:hover {
+  font-family: 'Ubuntu', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: black;
+}
+
+.content{
+
+}
+
+@media screen and (max-width: 800px) {
+  img.bandLogo {
+  width: 75%;
+  }
+}
