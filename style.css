@@ -27,6 +27,39 @@ p.font {
   text-align: center;
 }
 
+/*---- MENU ----*/
+ul{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+ul li{
+  display: inline-block;
+  text-align: center;
+}
+
+ul a{
+  font-family: 'Ubuntu', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  float: none;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul a:hover {
+  font-family: 'Ubuntu', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: black;
+}
 
 /*Bakgrunnsbilder */
 .bg, .bg2, .bg3 {
@@ -63,38 +96,46 @@ img.bandLogo{
   width: 50%;
 }
 
-/*---- MENU ----*/
-ul{
+/*---- Scrolling wrapper ------*/
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 10px;
+
+}
+
+.card {
+  width: 400px;
+  height: 460px;
+  margin: 10px;
+  display: inline-block;
+  white-space: nowrap;
   overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
+  box-shadow: 0px 3px 8px lightgray;
+}
+
+img.cover {
   width: 100%;
-  text-align: center;
-  margin-top: 0;
+  margin: 0;
+
 }
 
-ul li{
-  display: inline-block;
-  text-align: center;
+p.utgivelseNavn, p.utgivelseInfo{
+  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
+  font-size: 10pt;
+  margin: 6px;
+  font-weight: 300;
+  color: #606060;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-ul a{
-  font-family: 'Ubuntu', sans-serif;
-  font-family: Arial, Helvetica, sans-serif;
-  float: none;
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul a:hover {
-  font-family: 'Ubuntu', sans-serif;
-  font-family: Arial, Helvetica, sans-serif;
-  background: white;
-  color: black;
+p.utgivelseInfo{
+  font-family: courier;
+  font-size: 9pt;
 }
 
 .content{
@@ -103,6 +144,11 @@ ul a:hover {
 
 @media screen and (max-width: 800px) {
   img.bandLogo {
-  width: 75%;
+    width: 75%;
+  }
+
+  .card{
+    width: 300px;
+    height: 360px;
   }
 }
