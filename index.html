@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width", inital-scale=1>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    H1.header {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 50px;
+        margin-top: 0%;
+        padding-top: 20px;
+        text-align: center;
+
+    }
+
+    p.font {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    body, html {
+        height: 100%
+    }
+    /*Bakgrunnsbilder */
+    .parallax, .parallax2, .parallax3 {
+        background-image: url("Bilder/Alfresco.png");
+
+        height: 100%;
+        width: 100%;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax2 {
+        background-image: url("Bilder/SwimmingCult.jpg");
+
+        
+    }
+    .parallax3 {
+        background-image: url("Bilder/Logo.jpg");
+        background-position-x: center;
+        background-position-y: 70%;
+        background-size: 40%;
+        height: 100%;
+      
+
+       
+    }
+   
+    img.knapper {
+      
+        min-width: 100px;
+        max-width: 100%;
+        
+    }
+
+    img.overskrift {
+        min-width: 100px;
+        max-width: 20%;
+    }
+
+   .img-container {
+       float: left;
+       width: 30%;
+       padding: 0px;
+       padding-left: 10%;
+   }
+
+
+
+    </style>
+    </head>
+    <body>
+        
+           
+       
+        <div class="parallax3">
+            
+         
+    
+            
+        
+                <div class="img-container">
+                        <a href="#info"><img class="knapper" src="Bilder/OmOss.png" alt="Info om Shakephase"> </a>
+                    </div>
+                    <div class="img-container">
+                        <a href="#band"><img class="knapper" src="Bilder/band.png" alt="Liste med band og artister" ></a>
+                     </div>
+                     <div class="img-container"> 
+                        <a href="#kontakt"><img class="knapper" src="Bilder/kontakt.png" alt="Kontaktinfo"></a>
+                    </div>
+        
+                
+        </div>
+        <div style="height:500px;background-color:#e03e52">
+            <h1 id= "info" class="header" style="color:white"><img class="overskrift" src="Bilder/OmOssWhite.png" alt="Overskrift Om Oss"></h1>
+            <p class="font" style="color:white">
+                Et lite uavhengig plateselskap som gir ut snever musikk med et glimt i øyet
+                <br>
+                Liste med band, litt info
+            </p>
+        </div>
+    
+        <div class="parallax"></div>
+
+        <div style="height:500px;background-color:#1c5253">
+                <h1 id="band" class="header" style="color:white"><img class="overskrift" src="Bilder/BandWhite.png" alt="Overskrift Band"></h1>
+
+                <p class="font" style="color:white">
+                    Liste med band og linker
+                </p>
+        </div>
+
+        <div class="parallax2"></div>
+
+        <div style="height:300px;background-color: #54556c">
+                <h1 id="kontakt" class="header" style="color:white"><img class="overskrift" src="Bilder/KontaktWhite.png" alt="Overskrift Kontakt"></h1>
+                <p class="font" style="color:white">
+                        Mail: shakephase@gmail.com <br>
+                        Facebook link kanskje <br>
+                        Spotify spilleliste
+                        Soundcloud
+                </p>
+            </div>
+</html>
